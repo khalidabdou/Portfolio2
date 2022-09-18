@@ -1,19 +1,15 @@
 const siteMetadata = {
-  title: 'Raphaël Chelly - Digital marketing project manager',
+  title: 'KHALID Abadellah - Android Developper',
   author: 'Raphaël Chelly',
   headerTitle: 'Raphaël Chelly',
-  description: 'Portfolio of a digital marketing guy who codes a bit.',
+  description: 'Portfolio of a android developper guy who codes a bit.',
   language: 'en-us',
   theme: 'system', // system, dark or light
-  siteUrl: 'https://www.raphaelchelly.com/',
+  siteUrl: 'https://www.khalidabdellah.com/',
   siteRepo: 'https://github.com/raphaelchelly/raph_www',
-  siteLogo: '/static/images/raph-logo.png',
-  image: '/static/images/avatar.jpg',
+
   socialBanner: '/static/images/twitter-card.png',
-  email: 'hi@raphaelchelly.com',
-  github: 'https://github.com/raphaelchelly',
-  twitter: 'https://twitter.com/raphael_chelly',
-  linkedin: 'https://www.linkedin.com/in/raphaelchelly',
+
   locale: 'en-US',
   analytics: {
     // If you want to use an analytics provider you have to add it to the

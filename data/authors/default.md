@@ -1,6 +1,6 @@
 ---
-name: Raphaël Chelly
-avatar: /static/images/avatar.jpg
+name: Abdellah KHALID
+avatar: https://avatars.githubusercontent.com/u/37934938?u=63f2e7c27905f77aed4ec78e6742381a196070ef&v=4
 occupation: Marketing Project Manager
 company: Octopia
 email: hi@raphaelchelly.com
@@ -9,7 +9,7 @@ linkedin: https://www.linkedin.com/raphael.chelly
 github: https://github.com/raphaelchelly
 ---
 
-Graduated from a **Master in Management** at Excelia Business School, I am passionate about **digital and new technologies.** Creative, proactive, versatile and with a good understanding of digital and marketing, **I am confident in my ability to tackle new missions.** Organized and rigorous, I possess a range of key business and interpersonal skills that I have developed through my professional experiences.
+Hi, my name is Abdellah KHALID. I’m an **Android Developer** and technology enthusiast. Love working on a new and exciting projects, sharing my knowledge with others, and always willing to learn more
 
 - [💼 Experience](#experience)
 - [🧑🏻‍💻 Side Project](#side-project)
