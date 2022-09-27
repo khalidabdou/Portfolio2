@@ -1,28 +1,33 @@
 const projectsData = [
   {
-    title: 'Fabrilab',
-    description: `Creation of a web design agency.`,
-    imgSrc: '/static/images/projects/fabrilab.png',
-    href: '/blog/projects/fabrilab-web-agency',
+    title: 'wishes - next js',
+    description: `Creation of a web app .`,
+    imgSrc: '/static/images/projects/wishes.png',
+    href: '/blog/projects/wishes',
   },
   {
-    title: 'Toy Surfboards',
+    title: 'Node js - dashboard - api',
+    description: `An amazing app that will allow you to congratulate or show your love to your family and friends wherever you are.`,
+    imgSrc: '/static/images/projects/dashboard/13.png',
+    href: '/blog/projects/dashboard-stickers-quotes-wallpaper',
+  },
+  {
+    title: 'Stickers',
     description: `Creation & developpement of a e-commerce website.`,
-    imgSrc: '/static/images/projects/browser_toy.png',
-    href: '/blog/projects/toy-surfboards',
+    imgSrc: '/static/images/projects/stickers.png',
+    href: '/blog/projects/stickers',
   },
   {
-    title: 'TotalEnergies',
-    description: `Creation of Guidelines for Small & Big Packaging.`,
-    imgSrc: '/static/images/projects/TE-Project-2022.png',
-    href: '/blog/projects/total-energies',
+    title: 'Quiz Android',
+    description: `Creation of andorid Quiz .`,
+    imgSrc: '/static/images/projects/quiz2.png',
+    href: '/blog/projects/quiz-jetpack-compose',
   },
-
   {
-    title: 'Havana Club x VALD',
-    description: `Operational launch of the Havana Club x VALD collaboration.`,
-    imgSrc: '/static/images/projects/havanaclub-vald.jpg',
-    href: '/blog/projects/havana-club-x-vald',
+    title: 'react js - Stickers dashboard',
+    description: `Creation of dashboard for manage android stickers app .`,
+    imgSrc: '/static/images/projects/dashStickers/main.png',
+    href: '/blog/projects/dashboard-stickers',
   },
 ];
 

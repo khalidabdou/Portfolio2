@@ -1,6 +1,6 @@
 const greeting = {
   username: 'KHALID Abdellah',
-  title: 'Abdellah KHALID | Android Developer',
+  title: 'Android Developer',
   subTitle: `Hi, my name is Abdellah KHALID. I’m an Android Developer and technology enthusiast. Love working on a new and exciting projects, 
       sharing my knowledge with others, and always willing to learn more`,
   resumeLink: 'https://www.linkedin.com/in/abdellah-khalid',
@@ -24,8 +24,8 @@ const skillsSection = {
   title: 'What i do',
   subTitle: 'HANDLING ALL OF THESE TECHNOLOGIE',
   skills: [
-    'buidling and deploying android applications using Java with xml, Kotlin Modern UI Toolkit called Jetpack Compose., and Android Studio',
-    'building and deploying web applications using HTML, CSS, JavaScript, React, NodeJS, Express',
+    'buidling and publish android applications using Java, Kotlin, Jetpack Compose',
+    'building and deploying web applications using HTML, CSS, JavaScript,nextJS, ReactJS, NodeJS, Express',
   ],
 
   softwareSkills: [
@@ -38,7 +38,7 @@ const skillsSection = {
     },
 
     {
-      skillName: 'java',
+      skillName: 'Java',
       classname: 'logos:java',
       style: {
         backgroundColor: 'transparent',
@@ -46,6 +46,13 @@ const skillsSection = {
     },
     {
       skillName: 'node js',
+      classname: 'simple-icons:nodejs',
+      style: {
+        color: '#61DAFB',
+      },
+    },
+    {
+      skillName: 'ReactJs',
       classname: 'simple-icons:nodejs',
       style: {
         color: '#61DAFB',
@@ -72,6 +79,13 @@ const skillsSection = {
         backgroundColor: 'transparent',
       },
     },
+    // {
+    //   skillName: '...',
+    //   classname: 'logos:firebase',
+    //   style: {
+    //     backgroundColor: 'transparent',
+    //   },
+    // },
   ],
 };
 

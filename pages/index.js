@@ -7,7 +7,7 @@ import formatDate from '@/lib/utils/formatDate';
 import Image from '@/components/Image';
 import projectsData from '@/data/projectsData';
 import Card from '@/components/Card';
-import { greeting, socialMediaLinks } from 'infos';
+import { greeting, socialMediaLinks, skillsSection } from 'infos';
 
 import NewsletterForm from '@/components/NewsletterForm';
 
@@ -25,7 +25,7 @@ export default function Home({ posts }) {
       <PageSEO title={siteMetadata.title} description={siteMetadata.description} />
       <div className="space-y-2 pt-6 pb-4 md:space-y-5">
         <div className="flex flex-col-reverse items-start sm:flex-row">
-          <div className="flex flex-col pr-8">
+          <div className="flex flex-col pr-8 ">
             <h1 className="mb-1 text-3xl font-bold tracking-tight text-zinc-800 dark:text-white md:text-5xl">
               {greeting.username}
             </h1>
@@ -99,6 +99,34 @@ export default function Home({ posts }) {
         </div>
       </div>
       <div className="content mb-8">
+        <h2 className="mb-2 text-xl font-bold text-zinc-800 dark:text-white">What i do</h2>
+        <p className="max-w-[46ch] leading-relaxed text-zinc-500 dark:text-slate-300">
+          HANDLING ALL OF THESE TECHNOLOGIE
+        </p>
+        <div className="mt-4 flex flex-wrap">
+          {skillsSection.softwareSkills.map((skil, index) => {
+            return (
+              <span
+                key={index}
+                className="my-2 mr-2 rounded bg-blue-100 px-2.5 py-0.5 text-xs font-semibold text-blue-800 dark:bg-blue-200 dark:text-blue-800"
+              >
+                {skil.skillName}
+              </span>
+            );
+          })}
+        </div>
+
+        <div className="mt-4 ">
+          {skillsSection.skills.map((skil, index) => {
+            return (
+              <h4 key={index} className="mt-4">
+                {skil}
+              </h4>
+            );
+          })}
+        </div>
+      </div>
+      <div className="content mb-8">
         <h2 className="mb-2 text-xl font-bold text-zinc-800 dark:text-white">Projects</h2>
         <p className="max-w-[46ch] leading-relaxed text-zinc-500 dark:text-slate-300">
           A selection of projects I worked on in the past few years.
@@ -106,9 +134,9 @@ export default function Home({ posts }) {
       </div>
       <div className="container py-12">
         <div className="-m-4 flex flex-wrap">
-          {projectsData.map((d) => (
+          {projectsData.map((d, index) => (
             <Card
-              key={d.title}
+              key={index}
               title={d.title}
               description={d.description}
               imgSrc={d.imgSrc}
@@ -117,143 +145,6 @@ export default function Home({ posts }) {
           ))}
         </div>
       </div>
-      {/* <div className="content mt-12 sm:mt-24">
-        <h2 className="mb-2 text-xl font-bold text-zinc-800 dark:text-white">Experiences</h2>
-        <ul className="mt-8">
-          <li className="dark:text-zinc-350 my-5 flex items-center gap-4 text-zinc-500">
-            <a
-              className="link focusable font-medium text-zinc-800 dark:text-white"
-              href="https://www.octopia.com/"
-              rel="noreferrer"
-              target="_blank"
-            >
-              <Image
-                src="/static/images/workxp/octopia.jpg"
-                alt="Octopia"
-                width="50px"
-                height="50px"
-                className="rounded-md"
-              />
-            </a>
-            <div className="flex min-w-0 flex-col justify-center">
-              <p className="mb-1 flex items-center">
-                <span className="truncate font-semibold text-zinc-700 dark:text-zinc-100">
-                  Octopia
-                </span>
-                <span className="ml-1.5 inline-block flex-none translate-y-px rounded bg-zinc-100 p-1 text-xs font-medium leading-none text-zinc-500 dark:bg-zinc-800 dark:text-zinc-400">
-                  2021
-                  <span className="text-zinc-350 dark:text-zinc-550 mx-0.5">—</span>
-                  Today
-                </span>
-              </p>
-              <p className="flex items-center truncate">
-                <span className="flex-1 truncate text-zinc-500 dark:text-zinc-400">
-                  Marketing Project Manager
-                </span>
-              </p>
-            </div>
-          </li>
-          <li className="dark:text-zinc-350 my-5 flex items-center gap-4 text-zinc-500">
-            <a
-              className="link focusable font-medium text-zinc-800 dark:text-white"
-              href="https://www.fabrilab.net/"
-              rel="noreferrer"
-              target="_blank"
-            >
-              <Image
-                src="/static/images/workxp/fabrilab2.jpg"
-                alt="Octopia"
-                width="50px"
-                height="50px"
-                className="rounded-md"
-              />
-            </a>
-            <div className="flex min-w-0 flex-col justify-center">
-              <p className="mb-1 flex items-center">
-                <span className="truncate font-semibold text-zinc-700 dark:text-zinc-100">
-                  Fabrilab
-                </span>
-                <span className="ml-1.5 inline-block flex-none translate-y-px rounded bg-zinc-100 p-1 text-xs font-medium leading-none text-zinc-500 dark:bg-zinc-800 dark:text-zinc-400">
-                  2017
-                  <span className="text-zinc-350 dark:text-zinc-550 mx-0.5">—</span>
-                  Today
-                </span>
-              </p>
-              <p className="flex items-center truncate">
-                <span className="flex-1 truncate text-zinc-500 dark:text-zinc-400">
-                  Co-founder & Project Manager
-                </span>
-              </p>
-            </div>
-          </li>
-          <li className="dark:text-zinc-350 my-5 flex items-center gap-4 text-zinc-500">
-            <a
-              className="link focusable font-medium text-zinc-800 dark:text-white"
-              href="https://www.microsoft.com/"
-              rel="noreferrer"
-              target="_blank"
-            >
-              <Image
-                src="/static/images/workxp/microsoft.jpg"
-                alt="Octopia"
-                width="50px"
-                height="50px"
-                className="rounded-md"
-              />
-            </a>
-            <div className="flex min-w-0 flex-col justify-center">
-              <p className="mb-1 flex items-center">
-                <span className="truncate font-semibold text-zinc-700 dark:text-zinc-100">
-                  Microsoft
-                </span>
-                <span className="ml-1.5 inline-block flex-none translate-y-px rounded bg-zinc-100 p-1 text-xs font-medium leading-none text-zinc-500 dark:bg-zinc-800 dark:text-zinc-400">
-                  2019
-                  <span className="text-zinc-350 dark:text-zinc-550 mx-0.5">—</span>
-                  2020
-                </span>
-              </p>
-              <p className="flex items-center truncate">
-                <span className="flex-1 truncate text-zinc-500 dark:text-zinc-400">
-                  Marketing Project Manager Intern
-                </span>
-              </p>
-            </div>
-          </li>
-          <li className="dark:text-zinc-350 my-5 flex items-center gap-4 text-zinc-500">
-            <a
-              className="link focusable font-medium text-zinc-800 dark:text-white"
-              href="https://www.pernod-ricard.com/"
-              rel="noreferrer"
-              target="_blank"
-            >
-              <Image
-                src="/static/images/workxp/pernod-ricard.jpg"
-                alt="Octopia"
-                width="50px"
-                height="50px"
-                className="rounded-md"
-              />
-            </a>
-            <div className="flex min-w-0 flex-col justify-center">
-              <p className="mb-1 flex items-center">
-                <span className="truncate font-semibold text-zinc-700 dark:text-zinc-100">
-                  Pernod Ricard
-                </span>
-                <span className="ml-1.5 inline-block flex-none translate-y-px rounded bg-zinc-100 p-1 text-xs font-medium leading-none text-zinc-500 dark:bg-zinc-800 dark:text-zinc-400">
-                  2018
-                  <span className="text-zinc-350 dark:text-zinc-550 mx-0.5">—</span>
-                  2019
-                </span>
-              </p>
-              <p className="flex items-center truncate">
-                <span className="flex-1 truncate text-zinc-500 dark:text-zinc-400">
-                  Digital Project Manager Intern
-                </span>
-              </p>
-            </div>
-          </li>
-        </ul>
-      </div> */}
 
       {/* {siteMetadata.newsletter.provider !== '' && (
         <div className="flex items-center justify-center pt-4">
